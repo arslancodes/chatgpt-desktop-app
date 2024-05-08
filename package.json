@@ -1,0 +1,54 @@
+{
+  "name": "chatgpt-unofficial",
+  "productName": "chatgpt-unofficial",
+  "version": "1.0.0",
+  "icon": "src/assets/chatgpt.ico",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.chatgpt.unofficial",
+    "productName": "ChatGPT Unofficial",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "30.0.2",
+    "electron-builder": "^24.13.3"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Arslan",
+    "email": "to.arsalan@hotmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
