@@ -12,7 +12,7 @@ To install the application, you need to have Node.js and npm installed on your m
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/chatgpt-unofficial.git
+git clone https://github.com/arslancodes/chatgpt-unofficial.git
 ```
 2. Navigate into the project directory:
 ```bash
