@@ -93,3 +93,6 @@ out/
 
 #dist
 dist/
+
+# Idea
+.idea/
